@@ -123,8 +123,12 @@ header ul li a.active{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.content a:hover{
+    background-color: rgb(241, 241, 241);
+}
+
 .imgBx img {
-    max-width: 400px;
+    max-width: 280px;
     animation: animate 5s linear infinite;
 }
 
@@ -173,4 +177,159 @@ header ul li a.active{
     bottom: 30px;
     left: 50px;
     color: #8a2435;
+}
+
+@media screen and (max-width: 1050px) {
+    .container {
+        width: calc(100% - 80px);
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 20px 30px;
+    }
+
+    header ul{
+        margin-left: 20px;
+    }
+
+    header ul li {
+        margin: 0 5px;
+    }
+
+    header .logo{
+        font-size: 1.5rem;
+    }
+
+    header ul li a{
+        padding: 8px 13px;
+        font-size: .9rem;
+    }
+    .container{
+        justify-content: center;
+        flex-direction: column;
+        transform: translateX( 1px);
+
+    }
+
+    .content{
+        text-align: center;
+        transform: translateX(0px);
+        max-width: 700px;
+        padding: 40px;
+    }
+
+    .content h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .content p{
+        font-size: 1rem;
+    }
+    .content a {
+        font-size: 1rem;
+    }
+
+    .imgBx{
+        margin-bottom: 160px;
+    }
+
+    .imgBx img {
+        max-width: 200px;
+    }
+
+
+    .sci{
+        position: relative;
+        flex-direction: row; 
+        right: 0;
+        margin-bottom: 4rem;
+    }
+
+    .sci li a{
+        margin: 0 5px;
+    }
+
+    .copyrightText{
+        position: relative;
+        left: 0;
+        font-size: .8rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 651px) {
+    .container {
+        width: calc(100% - 60px);
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+
+    header .logo{
+        margin-bottom: 1rem;
+    }
+
+    .content {
+        margin-top: 3rem;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+
+    .container {
+        width: calc(100% - 50px);
+    }
+
+    section{
+        padding: 5px;
+    }
+
+    .content{
+        padding: 2rem 1rem;
+    }
+
+    .content h2{
+        font-size: 1.2rem;
+    }
+
+    header logo{
+        margin-bottom: 2rem;
+    }
+
+    header ul {
+    flex-direction: column;
+    text-align: center;
+    line-height: 250%;
+    margin-left: 0px;
+    }
+
+    .copyrightText{
+        font-size: .7rem;
+    }
 }
